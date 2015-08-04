@@ -1,11 +1,12 @@
 ﻿<Window x:Class="Slash_wo_ffmpeg.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" Background="#FF333333" WindowStyle="SingleBorderWindow">
+        Title="MainWindow" Height="550" Width="825" Background="#FF333333" WindowStyle="SingleBorderWindow">
     <Grid>
     	<Grid.ColumnDefinitions>
     		<ColumnDefinition/>
     	</Grid.ColumnDefinitions>
+    	<ResizeGrip HorizontalAlignment="Right" Height="77" Margin="0,0,0,1" VerticalAlignment="Bottom" Width="124"/>
         
     </Grid>
 </Window>
