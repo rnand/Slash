@@ -1,21 +1,22 @@
 ﻿<Window x:Class="Slash_wo_ffmpeg.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="550" Width="825" Background="#FF333333" WindowStyle="SingleBorderWindow">
+        Title="MainWindow" Height="550" Width="825" Background="#FF333333" WindowStyle="SingleBorderWindow" ResizeMode="CanResizeWithGrip">
     <Grid>
     	<Grid.ColumnDefinitions>
     		<ColumnDefinition/>
     	</Grid.ColumnDefinitions>
     	<ResizeGrip HorizontalAlignment="Right" Height="77" Margin="0,0,0,1" VerticalAlignment="Bottom" Width="124"/>
-        <Button Content="Cut" Height="60" HorizontalAlignment="Left" Margin="277,391,0,0" Name="button1" VerticalAlignment="Top" Width="214" Click="button1_Click" />
+        <Button Content="Cut" Height="60" HorizontalAlignment="Left" Margin="284,423,0,0" Name="button1" VerticalAlignment="Top" Width="214" Click="button1_Click" />
         <TextBlock Height="18" HorizontalAlignment="Left" Margin="12,481,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="779" TextWrapping="Wrap" />
-        <TextBox Height="34" HorizontalAlignment="Left" Margin="114,257,0,0" Name="textBoxFrom" VerticalAlignment="Top" Width="153" />
-        <TextBox Height="34" Margin="485,257,0,0" Name="textBoxTo" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153" />
-        <Label Content="From:" Height="23" HorizontalAlignment="Left" Margin="54,255,0,0" Name="label1" VerticalAlignment="Top" Width="54" FontStyle="Normal" FontWeight="Normal" Foreground="White" />
-        <Label Content="To:" Height="33" HorizontalAlignment="Left" Margin="446,255,0,0" Name="label2" VerticalAlignment="Top" Width="33" Foreground="White" />
-        <TextBox Height="32" HorizontalAlignment="Left" Margin="235,192,0,0" Name="textBoxLocation" VerticalAlignment="Top" Width="282" />
-        <Label Content="Video location:" Height="32" HorizontalAlignment="Left" Margin="125,192,0,0" Name="label3" VerticalAlignment="Top" Width="93" Foreground="White" />
-        <Label Content="hh:mm:ss" Height="28" HorizontalAlignment="Left" Margin="54,266,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" Width="63" />
-        <Label Content="hh:mm:ss" Foreground="White" Height="28" HorizontalAlignment="Left" Margin="415,266,0,0" Name="label5" VerticalAlignment="Top" Width="64" />
+        <TextBox Height="34" HorizontalAlignment="Left" Margin="133,366,0,0" Name="textBoxFrom" VerticalAlignment="Top" Width="153" />
+        <TextBox Height="34" Margin="504,366,0,0" Name="textBoxTo" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153" />
+        <Label Content="From:" Height="23" HorizontalAlignment="Left" Margin="73,364,0,0" Name="label1" VerticalAlignment="Top" Width="54" FontStyle="Normal" FontWeight="Normal" Foreground="White" />
+        <Label Content="To:" Height="33" HorizontalAlignment="Left" Margin="465,364,0,0" Name="label2" VerticalAlignment="Top" Width="33" Foreground="White" />
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="254,301,0,0" Name="textBoxLocation" VerticalAlignment="Top" Width="282" />
+        <Label Content="Video location:" Height="32" HorizontalAlignment="Left" Margin="144,301,0,0" Name="label3" VerticalAlignment="Top" Width="93" Foreground="White" />
+        <Label Content="hh:mm:ss" Height="28" HorizontalAlignment="Left" Margin="73,375,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" Width="63" />
+        <Label Content="hh:mm:ss" Foreground="White" Height="28" HorizontalAlignment="Left" Margin="434,375,0,0" Name="label5" VerticalAlignment="Top" Width="64" />
+        <MediaElement Height="226" HorizontalAlignment="Left" Margin="133,12,0,0" Name="mediaElement1" VerticalAlignment="Top" Width="524" Source="{Binding ElementName=textBoxLocation, Path=Text}" />
     </Grid>
 </Window>
