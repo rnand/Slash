@@ -18,5 +18,6 @@
         <Label Content="hh:mm:ss" Height="28" HorizontalAlignment="Left" Margin="73,375,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" Width="63" />
         <Label Content="hh:mm:ss" Foreground="White" Height="28" HorizontalAlignment="Left" Margin="434,375,0,0" Name="label5" VerticalAlignment="Top" Width="64" />
         <MediaElement Height="226" HorizontalAlignment="Left" Margin="133,12,0,0" Name="mediaElement1" VerticalAlignment="Top" Width="524" Source="{Binding ElementName=textBoxLocation, Path=Text}" />
+        <Button Content="Play" Height="28" HorizontalAlignment="Left" Margin="348,252,0,0" Name="button2" VerticalAlignment="Top" Width="87" Click="button2_Click" />
     </Grid>
 </Window>

@@ -70,5 +70,16 @@ namespace Slash_wo_ffmpeg
             }
             //textBlock1.Text = pathmatch.Value;
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBoxLocation.Text != null)
+            {
+                if(File.Exists(textBoxLocation.Text))
+                {
+                  //set stream and play
+                }
+            }
+        }
     }
 }
